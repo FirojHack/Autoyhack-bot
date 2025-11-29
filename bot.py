@@ -15,7 +15,7 @@ from utils.crypto import encrypt_bytes, decrypt_bytes
 load_dotenv()
 API_TOKEN = os.getenv("API_TOKEN")
 ADMIN_IDS = [int(x) for x in os.getenv("7894840999","").split(",") if x.strip()]
-MONGODB_URL = os.getenv("MONGODB_URL")
+MONGODB_URL = os.getenv("MONGODB_URI")
 DEFAULT_UPI = os.getenv("DEFAULT_UPI","9288367268@naviaxis")
 SCHEDULER_TYPE = os.getenv("SCHEDULER_TYPE","apscheduler")
 
@@ -298,6 +298,6 @@ async def on_startup():
 
 if __name__ == "__main__":
     import asyncio
-    asyncio.run(on_startup())
-    from aiogram import executor
-    executor.start_polling(dp, skip_updates=True)
+    asyncio.run(Main())
+   # from aiogram import executor 
+    dp.start_polling(dp, skip_updates=True)
