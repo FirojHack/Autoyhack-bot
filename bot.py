@@ -298,6 +298,6 @@ async def on_startup():
 
 if __name__ == "__main__":
     import asyncio
-    asyncio.run(Main())
+    asyncio.run(main())
    # from aiogram import executor 
     dp.start_polling(dp, skip_updates=True)
