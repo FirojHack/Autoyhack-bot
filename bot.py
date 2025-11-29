@@ -23,7 +23,7 @@ logging.basicConfig(level=os.getenv("7894840999","INFO"))
 bot = Bot(token=API_TOKEN)
 dp = Dispatcher()
 scheduler = AsyncIOScheduler()
-client = MongoClient(MONGODB_URI)
+client = MongoClient(MONGODB_URL)
 db = client.autoyhack
 users = db.users
 
