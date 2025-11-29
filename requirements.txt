@@ -1,9 +1,9 @@
-aiogram==3.0.0b7
-pymongo[srv]==4.3.3
-python-dotenv==1.0.0
-yt-dlp==2024.10.17
-google-api-python-client==2.86.0
-google-auth==2.23.0
-apscheduler==3.10.1
+aiogram==3.13.1
+pymongo[srv]==4.9.0
+python-dotenv==1.0.1
+yt-dlp==2024.11.19
+google-api-python-client==2.136.0
+google-auth==2.28.2
+apscheduler==3.10.4
 aiofiles==23.2.1
-cryptography==41.0.3
+cryptography==42.0.8
