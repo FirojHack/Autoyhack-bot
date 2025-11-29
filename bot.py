@@ -13,13 +13,13 @@ from dotenv import load_dotenv
 from utils.crypto import encrypt_bytes, decrypt_bytes
 
 load_dotenv()
-API_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
-ADMIN_IDS = [int(x) for x in os.getenv("ADMIN_IDS","").split(",") if x.strip()]
+API_TOKEN = os.getenv("8253352811:AAF4qVJuJtCr2c7YYeXoezguDlxPHggSKXw")
+ADMIN_IDS = [int(x) for x in os.getenv("7894840999","").split(",") if x.strip()]
 MONGODB_URI = os.getenv("MONGODB_URI")
 DEFAULT_UPI = os.getenv("DEFAULT_UPI","9288367268@naviaxis")
 SCHEDULER_TYPE = os.getenv("SCHEDULER_TYPE","apscheduler")
 
-logging.basicConfig(level=os.getenv("LOG_LEVEL","INFO"))
+logging.basicConfig(level=os.getenv("7894840999","INFO"))
 bot = Bot(token=API_TOKEN)
 dp = Dispatcher()
 scheduler = AsyncIOScheduler()
