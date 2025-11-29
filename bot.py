@@ -13,7 +13,7 @@ from dotenv import load_dotenv
 from utils.crypto import encrypt_bytes, decrypt_bytes
 
 load_dotenv()
-"API_TOKEN" = os.getenv("8253352811:AAF4qVJuJtCr2c7YYeXoezguDlxPHggSKXw")
+API_TOKEN = os.getenv("API_TOKEN")
 ADMIN_IDS = [int(x) for x in os.getenv("7894840999","").split(",") if x.strip()]
 MONGODB_URI = os.getenv("MONGODB_URI")
 DEFAULT_UPI = os.getenv("DEFAULT_UPI","9288367268@naviaxis")
